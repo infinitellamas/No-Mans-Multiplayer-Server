@@ -110,7 +110,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>..\lib\zeromq-4.2.1\zeromq-4.2.1\bin\x64\Release\v140\dynamic\libzmq.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>..\..\lib\zeromq-4.2.1\zeromq-4.2.1\bin\x64\Release\v140\dynamic\libzmq.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
     </Link>
@@ -170,6 +170,7 @@
     <ClCompile Include="PlayerData.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Communication.h" />
     <ClInclude Include="PlayerData.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

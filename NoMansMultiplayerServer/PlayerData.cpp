@@ -61,7 +61,7 @@ std::string PlayerData::getRegion() {
 }
 
 void PlayerData::setRegion(std::string region) {
-	_region = region;
+	strcpy(_region,region.c_str());
 }
 
 std::string PlayerData::getName() {
@@ -69,7 +69,7 @@ std::string PlayerData::getName() {
 }
 
 void PlayerData::setName(std::string name) {
-	_name = name;
+	strcpy(_name,name.c_str());
 }
 
 

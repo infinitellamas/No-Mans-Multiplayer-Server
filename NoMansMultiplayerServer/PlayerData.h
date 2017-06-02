@@ -20,12 +20,10 @@ public:
 		std::string getName();
 		void setName(std::string name);
 
-		std::chrono::milliseconds lastResponseTime = (std::chrono::milliseconds)0;
-
 private:
 	Json::Value jPlayerData; // We use this to easily serialize/de-serialize
 	int _id = 0;
 	float _pos[3] = { 0,0,0 };
-	std::string _region = "Empty Space"; // Default region.
-	std::string _name = "Wanderer"; // Default name.
+	char _region[30] = "Empty Space"; // Default region.
+	char _name[30] = "Wanderer"; // Default name.
 };
